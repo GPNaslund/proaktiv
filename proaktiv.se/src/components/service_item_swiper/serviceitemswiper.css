@@ -1,0 +1,51 @@
+.swiper-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .swiper-slide {
+    flex: 0 0 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .swiper-slide.active {
+    opacity: 1;
+    pointer-events: initial;
+  }
+  
+  .swiper-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: lightgray;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .swiper-button-prev {
+    margin-right: 10px;
+  }
+  
+  .swiper-button-next {
+    margin-left: 10px;
+  }
+  
+  .book-now-button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
