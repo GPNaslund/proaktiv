@@ -11,41 +11,84 @@
   
   .swiper-slide {
     flex: 0 0 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .swiper-slide.active {
-    opacity: 1;
-    pointer-events: initial;
   }
   
   .swiper-navigation {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
   }
   
-  .swiper-button-prev,
-  .swiper-button-next {
-    background-color: lightgray;
-    padding: 5px 10px;
+  .swiper-navigation .swiper-button-prev,
+  .swiper-navigation .swiper-button-next {
+    background-color: transparent;
     border: none;
     cursor: pointer;
+    font-size: 20px;
+    color: white;
+    visibility: hidden;
+    margin: 10px;
   }
   
-  .swiper-button-prev {
-    margin-right: 10px;
+  .swiper-navigation .swiper-button-prev {
+    left: 10px;
   }
   
-  .swiper-button-next {
-    margin-left: 10px;
+  .swiper-navigation .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper-navigation.show-prev .swiper-button-prev,
+  .swiper-navigation.show-next .swiper-button-next {
+    visibility: visible;
   }
   
   .book-now-button {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .pagination-container {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    margin-top: 20px;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+  
+  .pagination-dots {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pagination-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkgray;
+    margin: 0 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .pagination-dot.active {
+    background-color: lightgray;
+  }
+  
+  .contact-info {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
   }
