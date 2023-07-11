@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import './serviceitem.css'
 
@@ -14,7 +16,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ serviceName, serviceDescripti
     return (
         <div className="relative h-screen w-screen">
             <div className="relative z-10 px-10 pt-28">
-                <h1 className="text-white text-2xl pb-5">{serviceName}</h1>
+                <h1 className="text-white text-2xl pb-2">{serviceName}</h1>
                 <p className="text-white text-xl pr-16">
                     {serviceDescription}
                 </p>

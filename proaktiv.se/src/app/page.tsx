@@ -1,3 +1,5 @@
+'use client'
+
 import ServiceItem from '@/components/service_item/service_item'
 import ServiceItemSwiper from '@/components/service_item_swiper/service_item_swiper'
 import Image from 'next/image'
