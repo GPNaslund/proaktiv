@@ -31,7 +31,7 @@ const InfoItem: React.FC<InfoItemProps> = ({ infoHeader, infoBody, infoImageSrc,
             <div className="image-container">
                 <Image
                     src={infoImageSrc}
-                    alt="test"
+                    alt={infoHeader}
                     layout="fill"
                     objectFit="cover"
                     quality={100}

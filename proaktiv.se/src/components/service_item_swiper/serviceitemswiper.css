@@ -74,13 +74,14 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: darkgray;
+    background-color: transparent;
+    border: 2px solid white;
     margin: 0 5px;
     transition: background-color 0.3s ease-in-out;
   }
   
   .pagination-dot.active {
-    background-color: lightgray;
+    background-color: white;
   }
   
   .contact-info {

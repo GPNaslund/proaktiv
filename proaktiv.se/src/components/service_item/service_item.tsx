@@ -41,7 +41,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ serviceName, serviceDescripti
             <div className="image-container">
                 <Image
                     src={serviceImageSrc}
-                    alt="test"
+                    alt={serviceName}
                     layout="fill"
                     objectFit="cover"
                     quality={100}

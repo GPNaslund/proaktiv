@@ -14,8 +14,11 @@ export default function OwnerPresentation() {
                     quality={100}
                 />
                 </div>
-                <p>Gustav Näslund Leg.Naprapat</p>
-                <a href={InstagramLink('naprapatgustav')}>@naprapatgustav</a>
+                <div className="text-sm pt-2">
+                    <p>Gustav Näslund</p>
+                    <p>Leg.Naprapat</p>
+                    <a href={InstagramLink('naprapatgustav')}>@naprapatgustav</a>
+                </div>
             </div>
             <div className="flex flex-col">
                 <div className='rounded-full overflow-hidden'>
@@ -27,8 +30,11 @@ export default function OwnerPresentation() {
                     quality={100}
                 />
                 </div>
-                <p>Synöve Asplund Lic.Personlig Tränare</p>
-                <a href={InstagramLink('synove_asplund')}>@synove_asplund</a>
+                <div className="text-sm pt-2">
+                    <p>Synöve Asplund</p>
+                    <p>Lic.Personlig Tränare</p>
+                    <a href={InstagramLink('synove_asplund')}>@synove_asplund</a>
+                </div>
             </div>
         </div>
     )
