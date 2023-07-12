@@ -2,6 +2,7 @@
 
 import Image from "next/legacy/image";
 import './serviceitem.css'
+import { useState } from 'react';
 
 type ServiceItemProps = {
     serviceName: string;
@@ -13,6 +14,10 @@ type ServiceItemProps = {
 }
 
 const ServiceItem: React.FC<ServiceItemProps> = ({ serviceName, serviceDescription, serviceImageSrc, price1, price2, price3 }) => {
+    const [imageLoaded, setImageLoaded] = useState(false);
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+    }
     return (
         <div className="relative h-screen w-screen">
             <div className="relative z-10 px-10 pt-28">
@@ -40,8 +45,9 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ serviceName, serviceDescripti
                     layout="fill"
                     objectFit="cover"
                     quality={100}
+                    onLoad={handleImageLoad}
                 />
-                <div className="image-overlay"></div>
+                {!imageLoaded && <div className="image-overlay"></div>}
             </div>
         </div>
     )

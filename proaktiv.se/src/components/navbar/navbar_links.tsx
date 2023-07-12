@@ -42,7 +42,7 @@ const NavBarLinks: React.FC<NavBarProps> = ({ ulStyling, handleMenuClick }) => {
             handleLinkClick(3);
           }}>Proaktiv Idrottscenter</button>
         </li>
-        <li className="pt-16">
+        <li className="pt-10">
           <div className="grid grid-cols-3">
             <a href={InstagramLink('proaktividrottscenter')} target="_blank">
               <Image 
