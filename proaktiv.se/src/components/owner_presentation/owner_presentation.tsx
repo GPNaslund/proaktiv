@@ -11,6 +11,7 @@ export default function OwnerPresentation() {
                     width={180}
                     height={180}
                     alt='bild på Gustav Näslund'
+                    quality={100}
                 />
                 </div>
                 <p>Gustav Näslund Leg.Naprapat</p>
@@ -23,6 +24,7 @@ export default function OwnerPresentation() {
                     width={180}
                     height={180}
                     alt='bild på Synöve Asplund'
+                    quality={100}
                 />
                 </div>
                 <p>Synöve Asplund Lic.Personlig Tränare</p>
