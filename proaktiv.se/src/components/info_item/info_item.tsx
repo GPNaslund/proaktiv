@@ -16,7 +16,7 @@ const InfoItem: React.FC<InfoItemProps> = ({ infoHeader, infoBody, infoImageSrc,
         <div className="relative h-screen w-screen">
             <div className="relative z-10 px-10 pt-24">
                 <h1 className="text-white text-2xl pb-2">{infoHeader}</h1>
-                <p className="text-white text-xl pr-8 whitespace-pre-line">
+                <p className="text-white text-xl pr-5 whitespace-pre-line">
                     {infoBody}
                 </p>
                 {additionalComponents.map((element, index) => (
