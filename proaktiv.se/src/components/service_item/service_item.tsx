@@ -15,7 +15,7 @@ type ServiceItemProps = {
 const ServiceItem: React.FC<ServiceItemProps> = ({ serviceName, serviceDescription, serviceImageSrc, price1, price2, price3 }) => {
     return (
         <div className="relative h-screen w-screen">
-            <div className="relative z-10 px-10 pt-30">
+            <div className="relative z-10 px-10 pt-28">
                 <h1 className="text-white text-2xl pb-2">{serviceName}</h1>
                 <p className="text-white text-xl pr-8 whitespace-pre-line">
                     {serviceDescription}
