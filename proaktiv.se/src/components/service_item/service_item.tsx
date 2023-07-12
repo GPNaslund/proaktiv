@@ -1,6 +1,6 @@
 'use client'
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import './serviceitem.css'
 
 type ServiceItemProps = {
@@ -34,7 +34,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ serviceName, serviceDescripti
                 <Image
                     src={serviceImageSrc}
                     alt="test"
-                    fill={true}
+                    layout="fill"
                     objectFit="cover"
                     quality={100}
                 />

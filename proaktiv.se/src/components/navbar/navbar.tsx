@@ -1,7 +1,7 @@
 'use client'
 
 import InstagramLink from '@/util/instagram_link';
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { useRef, useState } from 'react'
 import NavBarLinks from './navbar_links';
 import './hamburgermenu.css'

@@ -2,7 +2,7 @@
 
 import ServiceItem from '@/components/service_item/service_item'
 import ServiceItemSwiper from '@/components/service_item_swiper/service_item_swiper'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 export default function Home() {
   const items: JSX.Element[] = [
