@@ -47,7 +47,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ serviceName, serviceDescripti
                     quality={100}
                     onLoad={handleImageLoad}
                 />
-                {!imageLoaded && <div className="image-overlay"></div>}
+                {imageLoaded && <div className="image-overlay"></div>}
             </div>
         </div>
     )

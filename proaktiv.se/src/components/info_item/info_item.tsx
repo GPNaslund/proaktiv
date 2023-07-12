@@ -3,6 +3,7 @@
 import Image from "next/legacy/image";
 import './infoitem.css'
 import React from "react";
+import { useState } from 'react';
 
 type InfoItemProps = {
     infoHeader: string;
@@ -12,6 +13,10 @@ type InfoItemProps = {
 }
 
 const InfoItem: React.FC<InfoItemProps> = ({ infoHeader, infoBody, infoImageSrc, additionalComponents }) => {
+    const [imageLoaded, setImageLoaded] = useState(false);
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+    }
     return (
         <div className="relative h-screen w-screen">
             <div className="relative z-10 px-10 pt-24">
@@ -30,8 +35,9 @@ const InfoItem: React.FC<InfoItemProps> = ({ infoHeader, infoBody, infoImageSrc,
                     layout="fill"
                     objectFit="cover"
                     quality={100}
+                    onLoad={handleImageLoad}
                 />
-                <div className="image-overlay"></div>
+                {imageLoaded && <div className="image-overlay"></div>}
             </div>
         </div>
     )
