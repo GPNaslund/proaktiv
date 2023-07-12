@@ -60,7 +60,7 @@ export default function Home() {
    key={4}
    infoHeader='Proaktiv Idrottscenter'
    infoBody='En modern klinik med forskningsbaserat helhetsperspektiv. 
-   Vår passion ligger i att hjälpa från smärta och skada till stark och välmående.
+   Vår passion ligger i att hjälpa dig från smärta och skada till stark och välmående.
    Vi finns belägna inuti Stockholm Stadion, i anslutning till Kampsportstadion.'
    infoImageSrc={getImageSource('about-us')}
    additionalComponents={[<OwnerPresentation key={5}/>]}

@@ -71,8 +71,8 @@ const NavBarLinks: React.FC<NavBarProps> = ({ ulStyling, handleMenuClick }) => {
           </div>
         </li>
         <li className="lg:mr-10 text-xs flex flex-col items-center">
-          <p>info@proaktividrottscenter.se</p>
-          <p>08-12137337</p>
+          <a href="mailto:info@proaktividrottscenter.se">info@proaktividrottscenter.se</a>
+          <a href="tel:0812137337">08-12137337</a>
           <p>Lidingövägen 1, 11373 Stockholm</p>
         </li>
     </ul>
