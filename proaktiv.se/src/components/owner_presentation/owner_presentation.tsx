@@ -8,8 +8,8 @@ export default function OwnerPresentation() {
                 <div className='rounded-full overflow-hidden'>
                 <Image 
                     src='/gustav-sm.jpg'
-                    width={180}
-                    height={180}
+                    width={160}
+                    height={160}
                     alt='bild på Gustav Näslund'
                     quality={100}
                 />
@@ -21,8 +21,8 @@ export default function OwnerPresentation() {
                 <div className='rounded-full overflow-hidden'>
                 <Image 
                     src='/synove-sm.jpg'
-                    width={180}
-                    height={180}
+                    width={160}
+                    height={160}
                     alt='bild på Synöve Asplund'
                     quality={100}
                 />
