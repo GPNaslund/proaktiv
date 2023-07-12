@@ -7,7 +7,7 @@ export default function OwnerPresentation() {
             <div className="flex flex-col">
                 <div className='rounded-full overflow-hidden'>
                 <Image 
-                    src='/gustav-sm.jpg'
+                    src='/gustav-sm.png'
                     width={160}
                     height={160}
                     alt='bild på Gustav Näslund'
@@ -20,7 +20,7 @@ export default function OwnerPresentation() {
             <div className="flex flex-col">
                 <div className='rounded-full overflow-hidden'>
                 <Image 
-                    src='/synove-sm.jpg'
+                    src='/synove-sm.png'
                     width={160}
                     height={160}
                     alt='bild på Synöve Asplund'

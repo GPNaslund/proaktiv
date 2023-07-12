@@ -115,7 +115,7 @@ const ServiceItemSwiper: React.FC<ServiceSwiperProps> = ({ items }) => {
             </div>
             <div className="book-now-button">
                 <a href="https://system.easypractice.net/book/proaktiv-idrottscenter" target="_blank">
-                    <button className=" hover:bg-slate-400 hover:border-slate-400 text-white font-bold py-2 px-4 rounded-lg border-white border-2">
+                    <button className= " text-white font-bold py-2 px-4 rounded-lg border-white border-2">
                         Boka tid
                     </button>
                 </a>
