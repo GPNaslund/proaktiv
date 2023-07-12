@@ -13,7 +13,7 @@ export default function NavBar() {
         setIsOpen(!isOpen);
     }
 
-    const mobileMenu:string = "lg:hidden fixed top-0 left-0 w-full h-1/3 bg-white flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out";
+    const mobileMenu:string = "lg:hidden fixed top-0 left-0 w-full h-2/5 bg-white flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out";
 
     return (
         <nav className="fixed top-0 left-0 right-0 grid grid-cols-4 w-full z-10 p-5">
