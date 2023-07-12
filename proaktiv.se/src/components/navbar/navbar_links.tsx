@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
+import InstagramLink from "@/util/instagram_link";
+import FacebookLink from "@/util/facebook_link";
 
 type NavBarProps = {
   ulStyling?: string;
@@ -40,25 +42,33 @@ const NavBarLinks: React.FC<NavBarProps> = ({ ulStyling, handleMenuClick }) => {
             handleLinkClick(3);
           }}>Proaktiv Idrottscenter</button>
         </li>
-        <li className="pt-8 grid grid-cols-3">
-          <Image 
-            src="/instagram.svg"
-            alt="instagram icon"
-            width={35}
-            height={35}
-          />
-          <Image 
-            src="/facebook.svg"
-            alt="facebook icon"
-            width={35}
-            height={35}
-          />
-          <Image 
-            src="/googlemaps.svg"
-            alt="google maps icon"
-            width={35}
-            height={35}
-          />
+        <li className="pt-16">
+          <div className="grid grid-cols-3">
+            <a href={InstagramLink('proaktividrottscenter')} target="_blank">
+              <Image 
+                src="/instagram.svg"
+                alt="instagram icon"
+                width={35}
+                height={35}
+              />
+            </a>
+            <a href={FacebookLink('proaktividrottscenter')} target="_blank">
+            <Image 
+              src="/facebook.svg"
+              alt="facebook icon"
+              width={35}
+              height={35}
+            />
+          </a>
+          <a href="https://goo.gl/maps/BVbHc4pMbpoWM4eq6" target="_blank">
+            <Image 
+              src="/googlemaps.svg"
+              alt="google maps icon"
+              width={35}
+              height={35}
+            />
+          </a>
+          </div>
         </li>
         <li className="lg:mr-10 text-xs flex flex-col items-center">
           <p>info@proaktividrottscenter.se</p>

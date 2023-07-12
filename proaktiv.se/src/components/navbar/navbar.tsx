@@ -13,11 +13,11 @@ export default function NavBar() {
         setIsOpen(!isOpen);
     }
 
-    const mobileMenu:string = "lg:hidden fixed top-0 left-0 w-full h-1/2 bg-white flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out";
+    const mobileMenu:string = "lg:hidden fixed top-0 left-0 w-full h-1/3 bg-white flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out";
 
     return (
-        <nav className="fixed top-0 left-0 right-0 grid grid-cols-4 w-full z-10">
-            <div className="col-span-1 flex items-center justify-start ml-3 mt-3">
+        <nav className="fixed top-0 left-0 right-0 grid grid-cols-4 w-full z-10 p-5">
+            <div className="col-span-1 flex items-center justify-start">
                 <Image
                     src="/Mini-bones-white.svg"
                     alt="Proaktiv logo"
@@ -31,7 +31,7 @@ export default function NavBar() {
             <NavBarLinks ulStyling={`${mobileMenu} ${isOpen ? 'translate-y-0' : '-translate-y-full'}`} handleMenuClick={handleMenuClick} />
 
 
-            <div className="col-start-4 col-span-1 flex justify-center items-center">
+            <div className="col-start-4 col-span-1 flex justify-end items-center">
                 {/* Hamburger menu icon for smaller screns */}
                 <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={handleMenuClick}>
                     <span className={`hamburger-line ${isOpen ? 'open' : ''}`}></span>
