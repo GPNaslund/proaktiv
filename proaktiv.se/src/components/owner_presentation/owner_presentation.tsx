@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function OwnerPresentation() {
     return (
-        <div className="grid grid-cols-2 pt-10 gap-x-5 text-white text-center">
+        <div className="grid grid-cols-2 pt-8 gap-x-5 text-white text-center">
             <div className="flex flex-col">
                 <div className='rounded-full overflow-hidden'>
                 <Image 
