@@ -3,6 +3,8 @@
 import Image from "next/legacy/image";
 import './serviceitem.css'
 import { useState } from 'react';
+import useMediaQuery from "@/util/use_media_query";
+import Head from 'next/head'
 
 type ServiceItemProps = {
     serviceName: string;
@@ -19,22 +21,22 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ serviceName, serviceDescripti
         setImageLoaded(true);
     }
     return (
-        <div className="relative h-screen w-screen">
-            <div className="relative z-10 px-10 pt-28">
+        <div className="relative h-screen w-screen tablet:h-full tablet:w-full tablet:rounded tablet:overflow-hidden">
+            <div className="relative z-10 px-10 pt-28 tablet:px-5 tablet:pt-5 tablet:text-center">
                 <h1 className="text-white text-2xl pb-2">{serviceName}</h1>
-                <p className="text-white text-xl pr-8 whitespace-pre-line">
+                <p className="text-white text-xl pr-8 whitespace-pre-line tablet:pr-0 tablet:text-lg">
                     {serviceDescription}
                 </p>
-                <p className="text-white text-l pr-16 mt-5 underline">
+                <p className="text-white text-l pr-16 mt-5 underline tablet:pr-0 tablet:mt-5">
                     Priser
                 </p>
-                <p className="text-white text-l pr-16">
+                <p className="text-white text-l pr-16 tablet:pr-0">
                     {price1}
                 </p>
-                <p className="text-white text-l pr-16">
+                <p className="text-white text-l pr-16 tablet:pr-0">
                     {price2}
                 </p>
-                <p className="text-white text-l pr-16">
+                <p className="text-white text-l pr-16 tablet:pr-0 tablet:pb-5">
                     {price3}
                 </p>
             </div>

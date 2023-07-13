@@ -18,15 +18,19 @@ const InfoItem: React.FC<InfoItemProps> = ({ infoHeader, infoBody, infoImageSrc,
         setImageLoaded(true);
     }
     return (
-        <div className="relative h-screen w-screen">
-            <div className="relative z-10 px-10 pt-24">
-                <h1 className="text-white text-2xl pb-2">{infoHeader}</h1>
-                <p className="text-white text-xl pr-5 whitespace-pre-line">
-                    {infoBody}
-                </p>
+        <div className="relative h-screen w-screen tablet:h-full tablet:w-full tablet:rounded tablet:overflow-hidden">
+            <div className="relative z-10 px-10 pt-24 tablet:pt-12 tablet:text-center tablet:grid tablet:grid-cols-2">
+                <div>
+                    <h1 className="text-white text-2xl pb-2">{infoHeader}</h1>
+                    <p className="text-white text-xl pr-5 whitespace-pre-line tablet:px-12">
+                        {infoBody}
+                    </p>
+                </div>
+                <div>
                 {additionalComponents.map((element, index) => (
                     <React.Fragment key={index}>{element}</React.Fragment>
                 ))}
+                </div>
             </div>
             <div className="image-container">
                 <Image

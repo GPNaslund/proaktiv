@@ -1,11 +1,12 @@
-import InstagramLink from '@/util/instagram_link'
-import Image from 'next/image'
+import InstagramLink from '@/util/instagram_link';
+import Image from 'next/image';
+import './ownerpresentation.css';
 
 export default function OwnerPresentation() {
     return (
-        <div className="grid grid-cols-2 pt-5 gap-x-5 text-white text-center">
-            <div className="flex flex-col">
-                <div className='rounded-full overflow-hidden'>
+        <div className="grid grid-cols-2 md:grid-cols-4 pt-5 gap-x-5 text-white text-center">
+            <div className="md:col-start-2 flex flex-col justify-center items-center">
+                <div className='owner-image rounded-full overflow-hidden w-40'>
                 <Image 
                     src='/gustav-sm.jpg'
                     width={160}
@@ -20,15 +21,15 @@ export default function OwnerPresentation() {
                     <a href={InstagramLink('naprapatgustav')}>@naprapatgustav</a>
                 </div>
             </div>
-            <div className="flex flex-col">
-                <div className='rounded-full overflow-hidden'>
-                <Image 
-                    src='/synove-sm.jpg'
-                    width={160}
-                    height={160}
-                    alt='bild på Synöve Asplund'
-                    quality={100}
-                />
+            <div className="md:col-start-3 flex flex-col justify-center items-center">
+                <div className='owner-image rounded-full overflow-hidden w-40'>
+                    <Image 
+                        src='/synove-sm.jpg'
+                        width={160}
+                        height={160}
+                        alt='bild på Synöve Asplund'
+                        quality={100}
+                    />
                 </div>
                 <div className="text-sm pt-2">
                     <p>Synöve Asplund</p>

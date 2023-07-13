@@ -120,7 +120,7 @@ const ServiceItemSwiper: React.FC<ServiceSwiperProps> = ({ items }) => {
                     </button>
                 </a>
             </div>
-            <p className="contact-info text-xs tracking-widest">Lidingövägen 1, 113 73 Stockholm</p>
+            <p className="contact-info text-xs tracking-widest">Lidingövägen 1, 114 33 Stockholm</p>
         </div>
     );
 };

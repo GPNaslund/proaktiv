@@ -1,6 +1,6 @@
-import NavBar from '@/components/navbar/navbar'
 import './globals.css'
 import { Blinker } from 'next/font/google'
+
 
 const blinker = Blinker({
   subsets: ['latin'],
@@ -21,7 +21,6 @@ export default function RootLayout({
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <body className={blinker.className}>
-        <NavBar />
         {children}
       </body>
     </html>

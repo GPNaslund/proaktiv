@@ -1,8 +1,7 @@
 'use client'
 
-import InstagramLink from '@/util/instagram_link';
 import Image from "next/legacy/image"
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import NavBarLinks from './navbar_links';
 import './hamburgermenu.css'
 
@@ -13,11 +12,11 @@ export default function NavBar() {
         setIsOpen(!isOpen);
     }
 
-    const mobileMenu:string = "lg:hidden fixed top-0 left-0 w-full h-2/5 bg-white flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out";
+    const mobileMenu:string = "lg:hidden fixed top-0 left-0 w-full h-2/5 bg-white flex flex-col items-center justify-center transform transition-transform duration-300 ease-in-out z-20";
 
     return (
-        <nav className="fixed top-0 left-0 right-0 grid grid-cols-4 w-full z-10 p-5">
-            <div className="col-span-1 flex items-center justify-start">
+        <nav className="fixed top-0 left-0 right-0 grid grid-cols-4 w-full z-20 p-5">
+            <div className="col-span-1 flex items-center justify-start z-30">
                 <Image
                     src="/Mini-bones-white.svg"
                     alt="Proaktiv logo"
