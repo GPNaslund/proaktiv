@@ -50,7 +50,7 @@
   
   .book-now-button {
     position: absolute;
-    bottom: 10vh;
+    bottom: 13vh;
     left: 50%;
     transform: translateX(-50%);
   }
