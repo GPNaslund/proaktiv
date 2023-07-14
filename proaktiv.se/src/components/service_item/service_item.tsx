@@ -3,8 +3,6 @@
 import Image from "next/legacy/image";
 import './serviceitem.css'
 import { useState } from 'react';
-import useMediaQuery from "@/util/use_media_query";
-import Head from 'next/head'
 
 type ServiceItemProps = {
     serviceName: string;

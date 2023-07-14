@@ -20,6 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="description" content="En modern idrottsklink med ett forskningsbaserat
+      helhets perspektiv. Vi tillhandahåller naprapati, massage och rehabilitering för dig med
+      smärta i kroppen. Vi behandlar akuta och återkommande tillstånd."/>
       <body className={blinker.className}>
         {children}
       </body>
