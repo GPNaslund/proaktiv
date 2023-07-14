@@ -10,12 +10,9 @@ export default function NavBar() {
     const [showNavbar, setShowNavbar] = useState(true);
 
     useEffect(() => {
-        let prevScrollPos = window.pageYOffset;
         const handleScroll = () => {
-            const currentScrollPos = window.pageYOffset;
-            const scrollingDown = currentScrollPos > prevScrollPos;
-            setShowNavbar(!scrollingDown);
-            prevScrollPos = currentScrollPos;
+            const isTop = window.scrollY === 0;
+            setShowNavbar(!isTop);
         };
 
         window.addEventListener('scroll', handleScroll);
