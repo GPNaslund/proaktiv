@@ -50,7 +50,7 @@
   
   .book-now-button {
     position: absolute;
-    bottom: 60px;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -60,7 +60,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 130px;
+    bottom: 13%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -71,7 +71,7 @@
     align-items: center;
   }
   
-  .pagination-dot {
+  .pagination-dot { 
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -79,6 +79,7 @@
     border: 2px solid white;
     margin: 0 5px;
     transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
   }
   
   .pagination-dot.active {
@@ -87,7 +88,7 @@
   
   .contact-info {
     position: absolute;
-    bottom: 5px;
+    bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
