@@ -15,7 +15,7 @@ export default function OwnerPresentation() {
                     quality={100}
                 />
                 </div>
-                <div className="text-md tablet:text-sm pt-2">
+                <div className="text-lg tablet:text-sm pt-2">
                     <p>Gustav Näslund</p>
                     <p>Leg.Naprapat</p>
                     <a href={InstagramLink('naprapatgustav')}>@naprapatgustav</a>
@@ -31,7 +31,7 @@ export default function OwnerPresentation() {
                         quality={100}
                     />
                 </div>
-                <div className="text-md tablet:text-sm pt-2">
+                <div className="text-lg tablet:text-sm pt-2">
                     <p>Synöve Asplund</p>
                     <p>Lic.Personlig Tränare</p>
                     <a href={InstagramLink('synove_asplund')}>@synove_asplund</a>
