@@ -12,7 +12,7 @@ export default function NavBar() {
     useEffect(() => {
         const handleScroll = () => {
             const isTop = window.scrollY === 0;
-            setShowNavbar(!isTop);
+            setShowNavbar(isTop);
         };
 
         window.addEventListener('scroll', handleScroll);
