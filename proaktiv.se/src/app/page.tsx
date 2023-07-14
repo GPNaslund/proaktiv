@@ -53,7 +53,7 @@ export default function Home() {
       infoBody='En modern klinik med forskningsbaserat helhetsperspektiv. 
    Vår passion ligger i att hjälpa dig från smärta och skada till stark och välmående.
    Vi finns belägna inuti Stockholm Stadion, i anslutning till Kampsportstadion.'
-      infoImageSrc={isLargeScreen ? '/gym-md.jpg' : '/gym-sm.jpg'}
+      infoImageSrc={isLargeScreen ? '/kliniken-md.jpg' : '/kliniken-sm.jpg'}
       additionalComponents={[<OwnerPresentation key={5} />]}
     />,
   ]
